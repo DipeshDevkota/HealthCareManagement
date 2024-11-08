@@ -10,7 +10,12 @@ import {
 } from "@/components/ui/form";
 import CustomForm from "../ui/CustomForm";
 export enum formFieldType{
-    INPUT='input'
+    INPUT='input',
+    TEXTAREA='textarea',
+    PHONE_INPUT='checkbox',
+    DATE_PICKER='datePicker',
+    SELECT='select',
+    SKELETON='skeleton'
 }
 // Define validation schema with zod
 const formSchema = z.object({
