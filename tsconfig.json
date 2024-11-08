@@ -18,10 +18,17 @@
         "name": "next"
       }
     ],
+    "types": ["react", "react-dom", "react-hook-form"],
+    "baseUrl": ".",  // This tells TypeScript to resolve paths relative to the project root
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"]  // This resolves '@' to the root directory
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
